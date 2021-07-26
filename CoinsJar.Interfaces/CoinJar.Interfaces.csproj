@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.78" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoinsJar.Entities\CoinJar.Entities.csproj" />
+    <ProjectReference Include="..\CoinsJar.ViewModels\CoinJar.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>

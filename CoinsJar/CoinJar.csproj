@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="WeatherForecast.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.1.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.1.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoinsJar.DataAccess\CoinJar.DataAccess.csproj" />
+    <ProjectReference Include="..\CoinsJar.Entities\CoinJar.Entities.csproj" />
+    <ProjectReference Include="..\CoinsJar.Interfaces\CoinJar.Interfaces.csproj" />
+    <ProjectReference Include="..\CoinsJar.Utilities\CoinJar.Utilities.csproj" />
+    <ProjectReference Include="..\CoinsJar.ViewModels\CoinJar.ViewModels.csproj" />
+  </ItemGroup>
+
+
+</Project>
